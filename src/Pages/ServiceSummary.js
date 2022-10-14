@@ -1,9 +1,9 @@
 import React from 'react';
-import {Button, Paper} from "@mui/material";
-import LicensesTable from "../Components/LicensesTable"
 import DashboardCards from "../Components/DashboardCards";
+import {Button} from "@mui/material";
+import LicensesTable from "../Components/LicensesTable";
 
-function Licences(props) {
+function ServiceSummary(props) {
     return (
         <div className='licenses'>
             <div style={{
@@ -11,7 +11,7 @@ function Licences(props) {
                 flexDirection: "column",
                 flexFlow:"column"
             }}>
-                <p className='licences-title'>Licences Summary</p>
+                <p className='licences-title'>Services Summary</p>
                 <DashboardCards/>
                 <Button color='secondary' variant='contained' sx={{
                     top: '17rem',
@@ -33,4 +33,4 @@ function Licences(props) {
     );
 }
 
-export default Licences;
+export default ServiceSummary;

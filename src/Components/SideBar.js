@@ -1,14 +1,16 @@
 import React from "react";
+import {useNavigate} from "react-router-dom";
 
-export const drawer = (
-    <div>
+export const drawer = () => {
+    const navigate = useNavigate()
+    return <div>
         <div className="group-279 flex-col-hcenter">
             <p className="txt-427">LPC System</p>
             <div className="divider"/>
             <div className="dashboard flex-col-hstart-vstart">
                 <p className="txt-272">Dashboard</p>
             </div>
-            <div className="group-5375">
+            <div className="group-5375" onClick={e => navigate('/licences')}>
                 <div className="tasks flex-col-hstart-vstart">
                     <p className="txt-298">Licenses</p>
                 </div>
@@ -100,4 +102,4 @@ export const drawer = (
             className="application-stroke-applications"
         />
     </div>
-);
+};

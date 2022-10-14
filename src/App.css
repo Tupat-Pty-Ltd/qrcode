@@ -535,12 +535,6 @@ p {
     flex-direction: row;
 }
 
-.flex-col-hend {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
 .flex-row-vcenter {
     display: flex;
     flex-direction: row;
@@ -1766,7 +1760,7 @@ p {
     background-color: rgba(196, 196, 196, 0.32);
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.02);
     height: 42px;
-    width: 100%;
+    width: 90%;
 }
 
 .group-5360 {

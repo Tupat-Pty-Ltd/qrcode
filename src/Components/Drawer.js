@@ -7,6 +7,7 @@ import Dashboard from "../Pages/Dashboard";
 import TopBar from "./TopBar";
 import {drawer} from "./SideBar";
 import Licences from "../Pages/Licences";
+import ServiceSummary from "../Pages/ServiceSummary";
 
 const drawerWidth = 240;
 
@@ -81,13 +82,17 @@ function CandidateSideBar(props) {
 
                 {/* Route to switch screens */}
                 <Routes>
-                    {/*<Route*/}
-                    {/*    path="/"*/}
-                    {/*    element={<Dashboard/>}*/}
-                    {/*/>*/}
                     <Route
                         path="/"
+                        element={<Dashboard/>}
+                    />
+                    <Route
+                        path="/licences"
                         element={<Licences/>}
+                    />
+                    <Route
+                        path="/services"
+                        element={<ServiceSummary/>}
                     />
                 </Routes>
             </Box>
